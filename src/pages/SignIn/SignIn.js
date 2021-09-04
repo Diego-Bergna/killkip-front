@@ -27,7 +27,7 @@ export default function SignIn(props) {
 
       let config = {
         method: "post",
-        url: "http://localhost:8080/api/registerUser",
+        url: "https://killkip-backend.herokuapp.com/api/registerUser",
         headers: {
           "Content-Type": "application/json",
         },
@@ -36,7 +36,10 @@ export default function SignIn(props) {
 
       axios(config)
         .then(function (response) {
+          //evento despues de registrar
           alert(JSON.stringify(response.data));
+          props.setShowLogin(true);
+
         })
         .catch(function (error) {
           console.log(error);

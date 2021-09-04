@@ -14,7 +14,7 @@ function App() {
       {showLogin ? (
         <LogIn changeForm={changeForm} />
       ) : (
-        <SignIn changeForm={changeForm} />
+        <SignIn changeForm={changeForm} setShowLogin = {setShowLogin} />
       )}
     </div>
   );
