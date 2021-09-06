@@ -1,22 +1,35 @@
-import { useState } from "react";
 import "./App.css";
+import { 
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 import LogIn from "./pages/LogIn/LogIn";
 import SignIn from "./pages/SignIn/SignIn";
+import Home from "./pages/Home/Home";
 
 function App() {
-  const [showLogin, setShowLogin] = useState(true);
-  const changeForm = () => {
+  /* const [showLogin, setShowLogin] = useState(true);
+  /* const changeForm = () => {
     setShowLogin(!showLogin);
-  };
+  }; */ 
   return (
-    <div className="App">
-      {showLogin ? (
-        <LogIn changeForm={changeForm} />
-      ) : (
-        <SignIn changeForm={changeForm} setShowLogin = {setShowLogin} />
-      )}
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/LogIn">
+            <LogIn />
+          </Route>
+          <Route path="/SignIn">
+            <SignIn />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

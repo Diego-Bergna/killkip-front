@@ -2,8 +2,10 @@ import logo from "./../../assets/logo.png";
 import "./SignIn.css";
 import Input from "../../components/Input/Input";
 import { useState } from "react";
+import { useHistory } from "react-router";
 
 export default function SignIn(props) {
+  const history = useHistory()
   const [data, setData] = useState({
     fName: "",
     lName: "",
@@ -27,7 +29,7 @@ export default function SignIn(props) {
 
       let config = {
         method: "post",
-        url: "https://killkip-backend.herokuapp.com/api/registerUser",
+        url: "http://localhost:8080/api/registerUser",
         headers: {
           "Content-Type": "application/json",
         },
@@ -36,10 +38,13 @@ export default function SignIn(props) {
 
       axios(config)
         .then(function (response) {
-          //evento despues de registrar
-          alert(JSON.stringify(response.data));
-          props.setShowLogin(true);
-
+          if (response.data === "usuario no añadido"){
+            alert(JSON.stringify(response.data));
+          }
+          else{
+            alert(JSON.stringify(response.data));
+            history.push("/login");
+          }
         })
         .catch(function (error) {
           console.log(error);
@@ -86,12 +91,12 @@ export default function SignIn(props) {
           SignIn
         </button>
         <button
-          onClick={() => {
-            props.changeForm();
+          onClick={() =>{
+            history.push("/login");
           }}
           className="back"
         >
-          Back
+          LogIn
         </button>
       </div>
       <img className="logo" src={logo} alt="logo" />
