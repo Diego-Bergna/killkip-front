@@ -23,7 +23,7 @@ export default function LogIn(props) {
 
     let config = {
       method: "post",
-      url: "http://localhost:8080/api/login",
+      url: "https://killkip-backend.herokuapp.com/api/login",
       headers: {
         "Content-Type": "application/json",
       },

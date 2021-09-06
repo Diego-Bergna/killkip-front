@@ -29,7 +29,7 @@ export default function SignIn(props) {
 
       let config = {
         method: "post",
-        url: "http://localhost:8080/api/registerUser",
+        url: "https://killkip-backend.herokuapp.com/api/registerUser",
         headers: {
           "Content-Type": "application/json",
         },
