@@ -38,12 +38,12 @@ export default function SignIn(props) {
 
       axios(config)
         .then(function (response) {
-          if (response.data === "usuario no añadido"){
+          if (response.data === "usuario añadido"){
             alert(JSON.stringify(response.data));
+            history.push("/login");
           }
           else{
             alert(JSON.stringify(response.data));
-            history.push("/login");
           }
         })
         .catch(function (error) {

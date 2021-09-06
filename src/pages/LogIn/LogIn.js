@@ -32,12 +32,12 @@ export default function LogIn(props) {
     
     axios(config)
       .then(function (response) {
-        if (response.data === "datos incorrectos"){
+        if (response.data === "logeo exitoso"){
           alert(JSON.stringify(response.data));
+          history.push("/");
         }
         else{
           alert(JSON.stringify(response.data));        
-          history.push("/");
         }
       })
       .catch(function (error) {
