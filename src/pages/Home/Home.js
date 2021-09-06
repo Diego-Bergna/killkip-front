@@ -3,6 +3,11 @@ import "./Home.css";
 
 export default function Home(props){
     return (
-        <img className="logo" src={logo} alt="logo"></img>
+        <div>
+            <a href="/login">Login</a>
+            <img className="logo" src={logo} alt="logo"></img>
+        </div>
+
+        
     );
 }
