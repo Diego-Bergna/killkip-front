@@ -1,12 +1,28 @@
 import logo from "./../../assets/logo.png";
 import "./LogIn.css";
 import Input from "./../../components/Input/Input";
-import {useState } from "react";
+import {useEffect, useState } from "react";
 import {useHistory} from "react-router-dom";
+
 
 export default function LogIn(props) {
   const [data, setData] = useState({ email: "", password: "" });
-  
+
+
+
+  /////
+  //function Redirect(){
+  const [Redirect,SetRedirect] = useState(false);
+    useEffect(()=>{
+      if(Redirect){
+        window.location.href="https://6136962d38b21b8289fe948b--peaceful-lewin-45e24d.netlify.app/";
+      }
+    },[Redirect]);
+
+  //}
+
+
+  ////
   const setInput = (e) => {
     e.preventDefault();
     setData({ ...data, [e.target.name]: e.target.value });
@@ -34,7 +50,10 @@ export default function LogIn(props) {
       .then(function (response) {
         if (response.data === "logeo exitoso"){
           alert(JSON.stringify(response.data));
-          history.push("/");
+          //history.push("/");
+          //window.location.href("https://www.google.com/");
+          SetRedirect(true);
+
         }
         else{
           alert(JSON.stringify(response.data));        
