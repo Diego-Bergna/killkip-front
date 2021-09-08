@@ -38,11 +38,11 @@ export default function SignIn(props) {
 
       axios(config)
         .then(function (response) {
-          if (response.data === "usuario añadido"){
+          if (response.data === "usuario añadido") {
             alert(JSON.stringify(response.data));
             history.push("/login");
           }
-          else{
+          else {
             alert(JSON.stringify(response.data));
           }
         })
@@ -54,7 +54,7 @@ export default function SignIn(props) {
     }
   };
   return (
-    <div className="container">
+    <div className="loginContainer">
       <h1>SignIn</h1>
       <div className="signInform">
         <Input
@@ -87,17 +87,26 @@ export default function SignIn(props) {
           name="password2"
           onChange={setInput}
         />
-        <button onClick={sendData} className="buttonForm">
-          SignIn
-        </button>
-        <button
-          onClick={() =>{
-            history.push("/login");
-          }}
-          className="back"
-        >
-          LogIn
-        </button>
+
+        <div className="buttonsContainer">
+
+          <button
+            onClick={() => {
+              history.push("/login");
+            }}
+            className="back"
+          >
+            Back
+          </button>
+
+          <button onClick={sendData} className="buttonForm">
+            SignIn
+          </button>
+
+
+
+        </div>
+
       </div>
       <img className="logo" src={logo} alt="logo" />
     </div>
