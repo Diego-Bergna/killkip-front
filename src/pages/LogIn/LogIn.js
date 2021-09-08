@@ -1,6 +1,7 @@
 import logo from "./../../assets/logo.png";
-import "./LogIn.css";
+import "./LogIn.scss";
 import Input from "./../../components/Input/Input";
+import InputPassword from "./../../components/InputPassword/InputPassword";
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import eyeIcon from "./../../assets/Vector.png";
@@ -74,7 +75,7 @@ export default function LogIn(props) {
   return (
     <div className="container">
       <h1>Login</h1>
-      <div className="form">
+      <div className="loginform">
         <Input
           type="email"
           placeholder="Email"
@@ -82,13 +83,13 @@ export default function LogIn(props) {
           onChange={setInput}
         />
         <div className="inputPasswordContainer">
-          <Input className ="inputPassword"
+          <InputPassword 
             type={passwordShown ? "text" : "password"}
             placeholder="Contraseña"
             name="password"
             onChange={setInput}
           />
-          <img className="eyeIcon" src={eyeIcon} alt ="eyeIcon" onClick={togglePassword}/>
+          <img className="eyeIcon"  src={eyeIcon} alt ="eyeIcon" onClick={togglePassword}/>
         </div>
 
         <button onClick={sendData} className="buttonForm">

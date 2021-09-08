@@ -10,7 +10,7 @@ h1 {
   font-size: 3rem;
   color: white;
 }
-.form {
+.loginform {
   background: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
   border-radius: 29px;
@@ -19,51 +19,42 @@ h1 {
   flex-direction: column;
   font-family: "Montserrat";
   grid-gap: 1.5rem;
+
+  .buttonForm {
+    background: #ffd200;
+    border-radius: 9px;
+    margin: 0 auto;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+  }
 }
 
-.inputPassword {
-  margin: 0 auto;
-  background-color: black;
-  opacity: 50%;
-  color: white;
-  margin-top: 10px;
-  width: 300px;
-  height: 59px;
-  font-size: 22px;
-  margin-bottom: 14px;
-  max-width: 527px;
-  padding: 0 10%;
-}
+
 
 .inputPasswordContainer {
   position: relative;
   display: flex;
-  margin-bottom: 14px;
-}
-
-.eyeIcon {
-  position: absolute;
-  top: 38%;
-  right: 16%;
-  
-  
-}
-.eyeIcon:hover {
-  opacity: 0.6;
-  cursor: pointer;
-  
-}
-
-.buttonForm {
-  background: #ff0000;
+  background: rgba(196, 196, 196, 0.3);
   border-radius: 9px;
-  margin: 0 auto;
+  font-size: 1rem;
   border: none;
-  padding: 0.75rem 2rem;
-  font-weight: 800;
-  font-size: 1.5rem;
-  font-family: "Montserrat";
+  
+
+  .eyeIcon {
+    position: absolute;
+    top: 30%;
+    right: 5px;
+    transform: translate(-50%,0,0);
+  }
+  .eyeIcon:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
 }
+
 .haveAccount {
   font-family: "Montserrat";
   margin: 1rem 0;

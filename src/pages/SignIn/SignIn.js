@@ -1,5 +1,5 @@
 import logo from "./../../assets/logo.png";
-import "./SignIn.css";
+import "./SignIn.scss";
 import Input from "../../components/Input/Input";
 import { useState } from "react";
 import { useHistory } from "react-router";
