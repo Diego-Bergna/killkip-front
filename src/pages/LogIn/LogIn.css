@@ -21,8 +21,41 @@ h1 {
   grid-gap: 1.5rem;
 }
 
+.inputPassword {
+  margin: 0 auto;
+  background-color: black;
+  opacity: 50%;
+  color: white;
+  margin-top: 10px;
+  width: 300px;
+  height: 59px;
+  font-size: 22px;
+  margin-bottom: 14px;
+  max-width: 527px;
+  padding: 0 10%;
+}
+
+.inputPasswordContainer {
+  position: relative;
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.eyeIcon {
+  position: absolute;
+  top: 38%;
+  right: 16%;
+  
+  
+}
+.eyeIcon:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  
+}
+
 .buttonForm {
-  background: #ffd200;
+  background: #ff0000;
   border-radius: 9px;
   margin: 0 auto;
   border: none;

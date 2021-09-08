@@ -9,7 +9,18 @@ h1 {
   font-family: "Montserrat";
   font-size: 3rem;
 }
-.form {
+// .form {
+//   background: #ffffff;
+//   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+//   border-radius: 29px;
+//   padding: 3rem 2rem;
+//   display: flex;
+//   flex-direction: column;
+//   font-family: "Montserrat";
+//   grid-gap: 1.5rem;
+// }
+
+.signInform {
   background: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
   border-radius: 29px;
@@ -18,17 +29,17 @@ h1 {
   flex-direction: column;
   font-family: "Montserrat";
   grid-gap: 1.5rem;
-}
-
-.buttonForm {
-  background: #ffd200;
-  border-radius: 9px;
-  margin: 0 auto;
-  border: none;
-  padding: 0.75rem 2rem;
-  font-weight: 800;
-  font-size: 1.5rem;
-  font-family: "Montserrat";
+  
+  .buttonForm {
+    background: #0400ff;
+    border-radius: 9px;
+    margin: 0 auto;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+  }
 }
 .back {
   margin: 0 auto;

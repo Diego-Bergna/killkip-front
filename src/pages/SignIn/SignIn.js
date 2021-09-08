@@ -56,7 +56,7 @@ export default function SignIn(props) {
   return (
     <div className="container">
       <h1>SignIn</h1>
-      <div className="form">
+      <div className="signInform">
         <Input
           type="text"
           placeholder="Nombres"

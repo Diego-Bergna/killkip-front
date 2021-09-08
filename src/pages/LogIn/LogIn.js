@@ -1,23 +1,31 @@
 import logo from "./../../assets/logo.png";
 import "./LogIn.css";
 import Input from "./../../components/Input/Input";
-import {useEffect, useState } from "react";
-import {useHistory} from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
+import eyeIcon from "./../../assets/Vector.png";
 
 
 export default function LogIn(props) {
   const [data, setData] = useState({ email: "", password: "" });
+  const [passwordShown, setPasswordShown] = useState(false);
+
+  const togglePassword = () => {
+    // When the handler is invoked
+    // inverse the boolean state of passwordShown
+    setPasswordShown(!passwordShown);
+  };
 
 
 
   /////
   //function Redirect(){
-  const [Redirect,SetRedirect] = useState(false);
-    useEffect(()=>{
-      if(Redirect){
-        window.location.href="https://6136962d38b21b8289fe948b--peaceful-lewin-45e24d.netlify.app/";
-      }
-    },[Redirect]);
+  const [Redirect, SetRedirect] = useState(false);
+  useEffect(() => {
+    if (Redirect) {
+      window.location.href = "https://6136962d38b21b8289fe948b--peaceful-lewin-45e24d.netlify.app/";
+    }
+  }, [Redirect]);
 
   //}
 
@@ -45,18 +53,18 @@ export default function LogIn(props) {
       },
       data: dataForm,
     };
-    
+
     axios(config)
       .then(function (response) {
-        if (response.data === "logeo exitoso"){
+        if (response.data === "logeo exitoso") {
           alert(JSON.stringify(response.data));
           //history.push("/");
           //window.location.href("https://www.google.com/");
           SetRedirect(true);
 
         }
-        else{
-          alert(JSON.stringify(response.data));        
+        else {
+          alert(JSON.stringify(response.data));
         }
       })
       .catch(function (error) {
@@ -73,12 +81,16 @@ export default function LogIn(props) {
           name="email"
           onChange={setInput}
         />
-        <Input
-          type="password"
-          placeholder="Contraseña"
-          name="password"
-          onChange={setInput}
-        />
+        <div className="inputPasswordContainer">
+          <Input className ="inputPassword"
+            type={passwordShown ? "text" : "password"}
+            placeholder="Contraseña"
+            name="password"
+            onChange={setInput}
+          />
+          <img className="eyeIcon" src={eyeIcon} alt ="eyeIcon" onClick={togglePassword}/>
+        </div>
+
         <button onClick={sendData} className="buttonForm">
           Login
         </button>
@@ -87,7 +99,7 @@ export default function LogIn(props) {
         ¿No tienes una cuenta?{" "}
         <button
           className="register"
-          onClick={() =>{
+          onClick={() => {
             history.push("/signin");
           }}
         >
