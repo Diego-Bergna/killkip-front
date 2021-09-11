@@ -24,7 +24,7 @@ export default function LogIn(props) {
   const [Redirect, SetRedirect] = useState(false);
   useEffect(() => {
     if (Redirect) {
-      window.location.href = "https://6136962d38b21b8289fe948b--peaceful-lewin-45e24d.netlify.app/";
+      window.location.href = "https://form.7170s.com/";
     }
   }, [Redirect]);
 
