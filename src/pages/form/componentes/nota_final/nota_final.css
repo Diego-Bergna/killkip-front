@@ -2,8 +2,9 @@
     display: grid;
     position: relative;
     top: 1000px;
-    
-    right: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+    /* right: 10px; */
     grid-template-columns: 35.9% 2% 62.1%;
     grid-template-rows: 42.9% 14.16% 42.9fr;
     gap: 0px 0px;

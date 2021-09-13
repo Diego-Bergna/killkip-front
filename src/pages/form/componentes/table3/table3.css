@@ -9,9 +9,11 @@
 .container2 {
     position: relative;
     top: 600px;
-    right: 100px;
+    /* right: 100px; */
     display: grid;
     border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
     background: white;
     grid-template-rows: 10% 90%;
     grid-auto-columns: 1fr;

@@ -10,7 +10,7 @@
 .container1 {
     position: relative;
     top: 500px;
-    right: 100px;
+    /* right: 100px; */
     border-radius: 10px;
     background: white;
     margin-left: auto;

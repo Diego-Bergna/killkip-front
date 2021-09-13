@@ -2,7 +2,9 @@
     display: grid;
     position: relative;
     top: 1100px;
-    right: 100px;
+    /* right: 100px; */
+    margin-left: auto;
+    margin-right: auto;
     background: white;
     border: 3px solid transparent;
     grid-template-columns: 6% 20% 44% 24% 6%;

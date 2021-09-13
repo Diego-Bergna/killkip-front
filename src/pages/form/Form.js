@@ -13,7 +13,7 @@ import NombresBox from './componentes/nombres/nombres';
 import Observaciones from './componentes/observaciones/observaciones';
 import DniId from './componentes/dni_id/dni_id';
 import Firma from './componentes/firma/firma';
-
+import './Form.css'
 
 
 import Swal from 'sweetalert2';
@@ -321,7 +321,7 @@ export default function Form() {
   }
 
   return (
-    <main>
+    <main1>
       
       <Titulo />
       {/* <Formulario action='' onSubmit="enviar()"> */}
@@ -385,7 +385,7 @@ export default function Form() {
         <button type="submit" onClick={enviar} id="boton">Enviar</button>
       </div>
 
-    </main>
+    </main1>
   );
 }
 

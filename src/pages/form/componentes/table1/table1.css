@@ -11,7 +11,7 @@
 .container {
     position: relative;
     top: 400px;
-    right: 100px;
+    /* right: 100px; */
     border-radius: 10px;
     background: white;
     margin-left: auto;

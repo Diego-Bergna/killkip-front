@@ -15,7 +15,9 @@ pval {
 .container11 {
     display: grid;
     position: relative;
-    right: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    /* right: 150px; */
     top: 195px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 41% 18% 41%;
