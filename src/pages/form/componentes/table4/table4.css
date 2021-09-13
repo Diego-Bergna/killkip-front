@@ -1,0 +1,268 @@
+#input4 {
+    padding: 0 20px 0 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    z-index: 3;
+    background: #C4C4C44D;
+}
+
+.container3 {
+    position: relative;
+    top: 700px;
+    right: 100px;
+    border-radius: 10px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-auto-columns: 1fr;
+    gap: 15px 1px;
+    grid-auto-flow: row;
+    width: 1250px;
+    height: 1000px;
+}
+
+.titulo3 {
+    display: grid;
+    grid-template-columns: 32.5% 35% 32.5%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". titulo-texto3 .";
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.titulo-texto3 {
+    grid-area: titulo-texto3;
+    background-color: #FFD200;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.cuerpo3 {
+    display: grid;
+    grid-template-columns: 6% 38% 15% 15% 15% 6%;
+    grid-template-rows: 4% 11% 15% 15% 15% 14.5% 14.5% 4%;
+    gap: 1% 1%;
+    grid-auto-flow: row;
+    grid-template-areas: ". . . . . ." ". . colaborador3 encargado3 director3 ." ". act-org3 p13 p23 p33 ." ". act-equip3 p43 p53 p63 ." ". act-colab3 p73 p83 p93 ." ". predis3 p103 p113 p123 ." ". punt3 p133 p143 p153 ." ". . . . . .";
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.colaborador3 {
+    grid-area: colaborador3;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.colaborador3 p{
+    width: 219.38px;
+    height: 48.2px;
+    padding: 7px 29px 5px 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.1018px;
+    line-height: 24px;
+    text-align: center;
+    color: #454545;
+}
+
+.encargado3 {
+    grid-area: encargado3;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.encargado3 p{
+    width: 219.38px;
+    height: 48.2px;
+    padding: 7px 29px 5px 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.1018px;
+    line-height: 24px;
+    text-align: center;
+    color: #454545;
+}
+
+.director3 {
+    grid-area: director3;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.director3 p{
+    width: 219.38px;
+    height: 48.2px;
+    padding: 15px 29px 5px 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.1018px;
+    line-height: 24px;
+    text-align: center;
+    color: #454545;
+}
+
+.p13 {
+    grid-area: p13;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p23 {
+    grid-area: p23;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p33 {
+    grid-area: p33;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p43 {
+    grid-area: p43;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p53 {
+    grid-area: p53;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p63 {
+    grid-area: p63;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p73 {
+    grid-area: p73;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p83 {
+    grid-area: p83;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p93 {
+    grid-area: p93;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p103 {
+    grid-area: p103;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p113 {
+    grid-area: p113;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p123 {
+    grid-area: p123;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p133 {
+    grid-area: p133;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p143 {
+    grid-area: p143;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p153 {
+    grid-area: p153;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.act-org3 {
+    grid-area: act-org3;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.act-equip3 {
+    grid-area: act-equip3;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+.act-equip3 p{
+    padding-top: 10px;
+}
+
+.act-colab3 {
+    grid-area: act-colab3;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.act-colab3 p{
+    padding-top: 15px;
+}
+
+.predis3 {
+    grid-area: predis3;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.predis3 p{
+    padding-top: 8px;
+}
+
+.punt3 {
+    grid-area: punt3;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.punt3 p{
+    padding-top: 15px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* For presentation only, no need to copy the code below */
+
+/*   
+  .container * {
+    border: 1px solid red;
+    position: relative;
+  }
+  
+  .container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  } */

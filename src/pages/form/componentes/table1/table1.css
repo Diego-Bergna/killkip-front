@@ -1,0 +1,288 @@
+#input1{
+    padding: 0 20px 0 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    z-index: 3;
+    background: #C4C4C44D;
+
+}
+
+.container {
+    position: relative;
+    top: 400px;
+    right: 100px;
+    border-radius: 10px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 9.9% 90.1%;
+    grid-auto-columns: 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    align-content: stretch;
+    /*width: 1748px;
+    height: 1235px;*/
+    width: 1250px;
+    height: 811px;
+    z-index: 20;
+}
+
+.titulo {
+    display: grid;
+    grid-template-columns: 32.5% 35% 32.5%;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.Cuerpo {
+    display: grid;
+    grid-template-columns: 6% 38% 15% 15% 15% 6%;
+    grid-template-rows: 6% 12% 16% 16% 16% 16% 6%;
+    grid-auto-columns: 1fr;
+    gap: 2% 1%;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . ."
+        ". . colaborador encargado director ."
+        ". cumplimientos p1 p2 p3 ."
+        ". sentido p4 p5 p6 ."
+        ". orientacion p7 p8 p9 ."
+        ". responsabilidad p10 p11 p12 ."
+        ". . . . . .";
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.cumplimientos {
+    border-radius: 30px;
+    grid-area: cumplimientos;
+    background: #C4C4C44D;
+
+}
+.cumplimientos p{
+    padding: 12px 0 3px 0;
+}
+
+.sentido {
+    border-radius: 30px;
+    grid-area: sentido;
+    background: #C4C4C44D;
+
+}
+
+.orientacion {
+    border-radius: 30px;
+    grid-area: orientacion;
+    background: #C4C4C44D;
+
+}
+
+.orientacion p{
+    padding: 0 0 2px 0;
+}
+
+.responsabilidad {
+    border-radius: 30px;
+    grid-area: responsabilidad;
+    background: #C4C4C44D;
+
+}
+
+.responsabilidad p{
+    padding: 12px 0 3px 0;
+}
+
+.colaborador {
+    border-radius: 30px;
+    grid-area: colaborador;
+    background: #C4C4C44D;
+
+}
+
+.colaborador  p {
+    width: 219.38px;
+    height: 48.2px;
+    padding: 3px 24px 5px 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.1018px;
+    line-height: 24px;
+    text-align: center;
+    color: #454545;
+}
+
+.encargado {
+    border-radius: 30px;
+    grid-area: encargado;
+    background: #C4C4C44D;
+
+}
+
+.encargado p{
+
+    width: 219.38px;
+    height: 48.2px;
+    padding: 3px 34px 5px 10px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.1018px;
+    line-height: 24px;
+    text-align: center;
+    color: #454545;
+}
+
+.director {
+    border-radius: 30px;
+    grid-area: director;
+    background: #C4C4C44D;
+
+}
+
+.director p{
+    
+    width: 219.38px;
+    height: 48.2px;
+    padding: 11px 29px 5px 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.1018px;
+    line-height: 24px;
+    text-align: center;
+    color: #454545;
+}
+
+.p1 {
+    grid-area: p1;
+    border-radius: 30px;
+    background: #C4C4C44D;
+
+}
+
+.p2 {
+    grid-area: p2;
+    border-radius: 30px;
+    background: #C4C4C44D;
+
+}
+
+.p3 {
+    grid-area: p3;
+    border-radius: 30px;
+    background: #C4C4C44D;
+
+}
+
+.p4 {
+    grid-area: p4;
+    border-radius: 30px;
+    background: #C4C4C44D;
+
+}
+
+.p5 {
+    grid-area: p5;
+    border-radius: 30px;
+    background: #C4C4C44D;
+
+}
+
+.p6 {
+    grid-area: p6;
+    border-radius: 30px;
+    background: #C4C4C44D;
+
+}
+
+.p7 {
+    grid-area: p7;
+    border-radius: 30px;
+    background: #C4C4C44D;
+
+}
+
+.p8 {
+    grid-area: p8;
+    background: #C4C4C44D;
+    border-radius: 30px;
+
+}
+
+.p9 {
+    border-radius: 30px;
+    grid-area: p9;
+    background: #C4C4C44D;
+
+}
+
+.p10 {
+    border-radius: 30px;
+    grid-area: p10;
+    background: #C4C4C44D;
+
+}
+
+.p11 {
+    border-radius: 30px;
+    grid-area: p11;
+    background: #C4C4C44D;
+
+}
+
+.p12 {
+    border-radius: 30px;
+    grid-area: p12;
+    background: #C4C4C44D;
+
+}
+
+.titulo-texto {
+    display: grid;
+    grid-template-columns: 32.5% 35% 32.5%;
+    grid-template-rows: 100% 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". titulo-texto-tipo ."
+        ". . .";
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.titulo-texto-tipo {
+    border-radius: 0px 0px 30px 30px;
+    grid-area: titulo-texto-tipo;
+
+    background-color: #FFD200;
+}
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+ /* For presentation only, no need to copy the code below  */
+
+/* .container * {
+    border: 1px solid red;
+    position: relative;
+}
+
+.container *:after {
+    content: attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+} */
