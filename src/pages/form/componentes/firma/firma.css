@@ -1,6 +1,8 @@
 .containerFirma {
     display: grid;
     font-family:sans-serif;
+    margin-left: auto;
+    margin-right: auto; 
     font-style: normal;
     font-weight: 549.85;
     text-align: center;

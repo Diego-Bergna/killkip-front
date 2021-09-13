@@ -4,7 +4,7 @@ import logok from './logok.png';
 const DescriptionForm = () => {
     return (
         <div class="container12">
-            <div class='logo'>
+            <div class='logop'>
                 <img src={logok} alt='logo' width='259px' height='294px' />
             </div>
             <div class="eval-de">

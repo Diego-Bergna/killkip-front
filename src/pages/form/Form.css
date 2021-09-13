@@ -7,18 +7,24 @@
 body1 {
     
 } */
-
-main1{
-   
-    max-width: auto;
-    /* max-width: 1081px; */
-    width: auto;
-    text-align: center;
-    margin: auto;
-    padding: auto;
-    background: #FFD200;
+main0{
+    width: 100%;
+    background-color: #FFD200;
+    height:max-content;
 }
+/* main1{ */
+    /* max-width: auto; */
+    /* max-width: 1081px; */
+    /* width: auto; */
+    /* text-align: center;
+  background-color: green;
+    margin: auto;
+    padding: auto; */
+    /* background-color: #FFD200; */
+    
+/* } */
 
 div{
     font-family: 'Roboto', sans-serif;
+    
 }

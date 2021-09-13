@@ -15,6 +15,8 @@ import DniId from './componentes/dni_id/dni_id';
 import Firma from './componentes/firma/firma';
 import './Form.css'
 
+import ExportPdfComponent from './export-pdf';
+
 
 import Swal from 'sweetalert2';
 
@@ -129,6 +131,17 @@ export default function Form() {
     telefono: /^\d{7,14}$/,
     charge: /^[a-zA-ZÀ-ÿ\s]{1,40}$/
   }
+
+
+
+
+
+
+
+
+
+
+
   // const corsAnywhere = 'https://cors-anywhere.herokuapp.com/';
   function enviar(e) {
 
@@ -151,160 +164,160 @@ export default function Form() {
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Si,enviar.',
-      cancelButtonText:'Cancelar.'
+      cancelButtonText: 'Cancelar.'
     }).then((result) => {
       if (result.isConfirmed) {
-        
-    fetch('https://killkip-backend.herokuapp.com/api/form', {
-      method: "POST",
-      body: JSON.stringify(
-        {
-          apellidoP: Tabla0.box0.apellido1,
-          apellidoM: Tabla0.box0.apellido2,
-          nombres: Tabla0.box0.nombres,
-          cargo: Tabla0.box0.cargo,
-          fecha: Tabla0.box0.fecha,
-          desempeño: {
-            cumplimiento: {
-              colaborador: Number(Tabla1.box1.input1),
-              encargado: Number(Tabla1.box1.input2),
-              director: Number(Tabla1.box1.input3)
-            },
-            sentido_comun: {
-              colaborador: Number(Tabla1.box1.input4),
-              encargado: Number(Tabla1.box1.input5),
-              director: Number(Tabla1.box1.input6)
-            },
-            orientacion_de_resultados: {
-              colaborador: Number(Tabla1.box1.input7),
-              encargado: Number(Tabla1.box1.input8),
-              director: Number(Tabla1.box1.input9)
-            },
-            responsabilidad: {
-              colaborador: Number(Tabla1.box1.input10),
-              encargado: Number(Tabla1.box1.input11),
-              director: Number(Tabla1.box1.input12)
-            }
-          },
-          factor_humano: {
-            actitud_organizacion: {
-              colaborador: Number(Tabla2.box2.input13),
-              encargado: Number(Tabla2.box2.input14),
-              director: Number(Tabla2.box2.input15)
-            },
-            actitud_equipo: {
-              colaborador: Number(Tabla2.box2.input16),
-              encargado: Number(Tabla2.box2.input17),
-              director: Number(Tabla2.box2.input18)
-            },
-            actitud_colaboradores: {
-              colaborador: Number(Tabla2.box2.input19),
-              encargado: Number(Tabla2.box2.input20),
-              director: Number(Tabla2.box2.input21)
-            },
-            predisposicion: {
-              colaborador: Number(Tabla2.box2.input22),
-              encargado: Number(Tabla2.box2.input23),
-              director: Number(Tabla2.box2.input24)
-            },
-            puntualidad: {
-              colaborador: Number(Tabla2.box2.input25),
-              encargado: Number(Tabla2.box2.input26),
-              director: Number(Tabla2.box2.input27)
-            }
-          },
-          habilidades: {
-            respuesta: {
 
-              colaborador: Number(Tabla3.box3.input28),
-              encargado: Number(Tabla3.box3.input29),
-              director: Number(Tabla3.box3.input30)
-            },
-            organizacion: {
-              colaborador: Number(Tabla3.box3.input31),
-              encargado: Number(Tabla3.box3.input32),
-              director: Number(Tabla3.box3.input33)
-            },
-            potencial: {
-              colaborador: Number(Tabla3.box3.input34),
-              encargado: Number(Tabla3.box3.input35),
-              director: Number(Tabla3.box3.input36)
-            },
-            iniciativa: {
-              colaborador: Number(Tabla3.box3.input37),
-              encargado: Number(Tabla3.box3.input38),
-              director: Number(Tabla3.box3.input39)
-            }
-          },
-          calidad: {
-            exactitud: {
-              colaborador: Number(Tabla4.box4.input40),
-              encargado: Number(Tabla4.box4.input41),
-              director: Number(Tabla4.box4.input42)
-            },
-            grado_de_conocimiento: {
-              colaborador: Number(Tabla4.box4.input43),
-              encargado: Number(Tabla4.box4.input44),
-              director: Number(Tabla4.box4.input45)
-            },
-            precision: {
-              colaborador: Number(Tabla4.box4.input46),
-              encargado: Number(Tabla4.box4.input47),
-              director: Number(Tabla4.box4.input48)
-            },
-            relaciones_interpersonales: {
-              colaborador: Number(Tabla4.box4.input49),
-              encargado: Number(Tabla4.box4.input50),
-              director: Number(Tabla4.box4.input51)
-            },
-            presentacion_personal: {
-              colaborador: Number(Tabla4.box4.input52),
-              encargado: Number(Tabla4.box4.input53),
-              director: Number(Tabla4.box4.input54)
-            }
-          },
-          liderazgo: {
-            coordinacion: {
-              colaborador: Number(Tabla5.box5.input55),
-              encargado: Number(Tabla5.box5.input56),
-              director: Number(Tabla5.box5.input57)
-            },
-            cooperacion: {
-              colaborador: Number(Tabla5.box5.input58),
-              encargado: Number(Tabla5.box5.input59),
-              director: Number(Tabla5.box5.input60)
-            },
-            capacidad: {
-              colaborador: Number(Tabla5.box5.input61),
-              encargado: Number(Tabla5.box5.input62),
-              director: Number(Tabla5.box5.input63)
-            },
-            trabajo: {
-              colaborador: Number(Tabla5.box5.input64),
-              encargado: Number(Tabla5.box5.input65),
-              director: Number(Tabla5.box5.input66)
-            },
-            creatividad: {
-              colaborador: Number(Tabla5.box5.input67),
-              encargado: Number(Tabla5.box5.input68),
-              director: Number(Tabla5.box5.input69)
-            }
-          },
-          promedios: {
-            eval_colaborador: promColab,
-            eval_jefe: promEncarg,
-            eval_gerente: promDirect,
-            promedio_general: promFin
-          },
-          observaciones: Tabla6.box6.textarea,
-          dni: Tabla7.box7.dni,
-          id: Tabla7.box7.id
-        }),
-      headers: {
-        "Content-type": "application/json",
-        'Access-Control-Allow-Origin': '*',
-      }
-    });
+        fetch('https://killkip-backend.herokuapp.com/api/form', {
+          method: "POST",
+          body: JSON.stringify(
+            {
+              apellidoP: Tabla0.box0.apellido1,
+              apellidoM: Tabla0.box0.apellido2,
+              nombres: Tabla0.box0.nombres,
+              cargo: Tabla0.box0.cargo,
+              fecha: Tabla0.box0.fecha,
+              desempeño: {
+                cumplimiento: {
+                  colaborador: Number(Tabla1.box1.input1),
+                  encargado: Number(Tabla1.box1.input2),
+                  director: Number(Tabla1.box1.input3)
+                },
+                sentido_comun: {
+                  colaborador: Number(Tabla1.box1.input4),
+                  encargado: Number(Tabla1.box1.input5),
+                  director: Number(Tabla1.box1.input6)
+                },
+                orientacion_de_resultados: {
+                  colaborador: Number(Tabla1.box1.input7),
+                  encargado: Number(Tabla1.box1.input8),
+                  director: Number(Tabla1.box1.input9)
+                },
+                responsabilidad: {
+                  colaborador: Number(Tabla1.box1.input10),
+                  encargado: Number(Tabla1.box1.input11),
+                  director: Number(Tabla1.box1.input12)
+                }
+              },
+              factor_humano: {
+                actitud_organizacion: {
+                  colaborador: Number(Tabla2.box2.input13),
+                  encargado: Number(Tabla2.box2.input14),
+                  director: Number(Tabla2.box2.input15)
+                },
+                actitud_equipo: {
+                  colaborador: Number(Tabla2.box2.input16),
+                  encargado: Number(Tabla2.box2.input17),
+                  director: Number(Tabla2.box2.input18)
+                },
+                actitud_colaboradores: {
+                  colaborador: Number(Tabla2.box2.input19),
+                  encargado: Number(Tabla2.box2.input20),
+                  director: Number(Tabla2.box2.input21)
+                },
+                predisposicion: {
+                  colaborador: Number(Tabla2.box2.input22),
+                  encargado: Number(Tabla2.box2.input23),
+                  director: Number(Tabla2.box2.input24)
+                },
+                puntualidad: {
+                  colaborador: Number(Tabla2.box2.input25),
+                  encargado: Number(Tabla2.box2.input26),
+                  director: Number(Tabla2.box2.input27)
+                }
+              },
+              habilidades: {
+                respuesta: {
+
+                  colaborador: Number(Tabla3.box3.input28),
+                  encargado: Number(Tabla3.box3.input29),
+                  director: Number(Tabla3.box3.input30)
+                },
+                organizacion: {
+                  colaborador: Number(Tabla3.box3.input31),
+                  encargado: Number(Tabla3.box3.input32),
+                  director: Number(Tabla3.box3.input33)
+                },
+                potencial: {
+                  colaborador: Number(Tabla3.box3.input34),
+                  encargado: Number(Tabla3.box3.input35),
+                  director: Number(Tabla3.box3.input36)
+                },
+                iniciativa: {
+                  colaborador: Number(Tabla3.box3.input37),
+                  encargado: Number(Tabla3.box3.input38),
+                  director: Number(Tabla3.box3.input39)
+                }
+              },
+              calidad: {
+                exactitud: {
+                  colaborador: Number(Tabla4.box4.input40),
+                  encargado: Number(Tabla4.box4.input41),
+                  director: Number(Tabla4.box4.input42)
+                },
+                grado_de_conocimiento: {
+                  colaborador: Number(Tabla4.box4.input43),
+                  encargado: Number(Tabla4.box4.input44),
+                  director: Number(Tabla4.box4.input45)
+                },
+                precision: {
+                  colaborador: Number(Tabla4.box4.input46),
+                  encargado: Number(Tabla4.box4.input47),
+                  director: Number(Tabla4.box4.input48)
+                },
+                relaciones_interpersonales: {
+                  colaborador: Number(Tabla4.box4.input49),
+                  encargado: Number(Tabla4.box4.input50),
+                  director: Number(Tabla4.box4.input51)
+                },
+                presentacion_personal: {
+                  colaborador: Number(Tabla4.box4.input52),
+                  encargado: Number(Tabla4.box4.input53),
+                  director: Number(Tabla4.box4.input54)
+                }
+              },
+              liderazgo: {
+                coordinacion: {
+                  colaborador: Number(Tabla5.box5.input55),
+                  encargado: Number(Tabla5.box5.input56),
+                  director: Number(Tabla5.box5.input57)
+                },
+                cooperacion: {
+                  colaborador: Number(Tabla5.box5.input58),
+                  encargado: Number(Tabla5.box5.input59),
+                  director: Number(Tabla5.box5.input60)
+                },
+                capacidad: {
+                  colaborador: Number(Tabla5.box5.input61),
+                  encargado: Number(Tabla5.box5.input62),
+                  director: Number(Tabla5.box5.input63)
+                },
+                trabajo: {
+                  colaborador: Number(Tabla5.box5.input64),
+                  encargado: Number(Tabla5.box5.input65),
+                  director: Number(Tabla5.box5.input66)
+                },
+                creatividad: {
+                  colaborador: Number(Tabla5.box5.input67),
+                  encargado: Number(Tabla5.box5.input68),
+                  director: Number(Tabla5.box5.input69)
+                }
+              },
+              promedios: {
+                eval_colaborador: promColab,
+                eval_jefe: promEncarg,
+                eval_gerente: promDirect,
+                promedio_general: promFin
+              },
+              observaciones: Tabla6.box6.textarea,
+              dni: Tabla7.box7.dni,
+              id: Tabla7.box7.id
+            }),
+          headers: {
+            "Content-type": "application/json",
+            'Access-Control-Allow-Origin': '*',
+          }
+        });
         Swal.fire(
           'Enviado',
           'El formulario fue enviado con exito.',
@@ -313,16 +326,13 @@ export default function Form() {
     })
 
 
-
-
-
-
-
   }
 
   return (
-    <main1>
-      
+
+    <main0> 
+         {/* <main1> */}
+
       <Titulo />
       {/* <Formulario action='' onSubmit="enviar()"> */}
       <NombresBox
@@ -383,9 +393,15 @@ export default function Form() {
         setData={setTabla7} />
       <div class="containerButon">
         <button type="submit" onClick={enviar} id="boton">Enviar</button>
+   
+      </div>
+      <div className="App container">
+        <ExportPdfComponent/>
       </div>
 
-    </main1>
+    {/* </main1> */}
+    </main0>
+
   );
 }
 
