@@ -1,0 +1,200 @@
+.inputFormulario {
+    width: 100%;
+    background: #C4C4C44D !important;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+    border: 3px solid transparent;
+}
+
+.inputFormulario:focus {
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.inputFormulario1 {
+    width: 80%;
+    background: #C4C4C44D;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+    border: 3px solid transparent;
+}
+
+.inputFormulario1:focus {
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.inputFormularioDate {
+    width: 80%;
+    background: #C4C4C44D;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+    border: 3px solid transparent;
+    background: rgb(232, 240, 254);
+}
+
+.inputFormularioDate:focus {
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.container6 {
+    
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.Nombre_evaluado {
+    
+    border-radius: 20px;
+    background: white;
+    padding: 10px 50px 50px;
+
+}
+
+.contenedorDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.contenedorDiv > *{
+    width: 30%;
+    min-width: 250px;
+}
+
+.Titulo {
+    grid-area: Titulo;
+    border-radius: 30px;
+    padding-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.Apellido1 {
+    grid-area: Apellido1;
+    border-radius: 30px;
+}
+
+.Apellido1 div {
+    padding-bottom: 20p;
+}
+
+.Apellido2 {
+    grid-area: Apellido2;
+    border-radius: 30px;
+}
+
+.Nombres {
+    grid-area: Nombres;
+    border-radius: 30px;
+}
+
+.cargo_fecha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.cargo_fecha > *{
+    width: 30%;
+    min-width: 150px;
+}
+
+/******/
+.area-cargo {
+    width: 35%;
+    height: 290%;
+    border-radius: 20px;
+    background: white;
+    grid-auto-flow: row;
+    padding-top: 15px;
+    margin: 40.5px 0 0 110px;
+}
+
+.titulo-carrgo {
+    margin-bottom: 15px;
+    text-align: left;
+    margin-left: 20px;
+    grid-area: titulo-carrgo;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.input-cargo {
+    grid-area: input-cargo;
+    border-radius: 30px;
+    margin-bottom: 18px;
+}
+
+.area-fecha {
+    width: 35%;
+    height: 290%;
+    border-radius: 20px;
+    background: white;
+    grid-auto-flow: row;
+    padding-top: 15px;
+    margin: 40.5px 106px 0;
+}
+
+.titulo-fecha {
+    margin-bottom: 15px;
+    text-align: left;
+    margin-left: 20px;
+    grid-area: titulo-carrgo;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.input-fecha {
+    grid-area: input-fecha;
+    border-radius: 30px;
+    margin-bottom: 18px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* For presentation only, no need to copy the code below */
+
+
+/* .container * {
+    border: 1px solid red;
+    position: relative;
+  }
+  
+  .container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+   */

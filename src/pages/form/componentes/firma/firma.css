@@ -1,0 +1,49 @@
+.containerFirma {
+    display: grid;
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight: 549.85;
+    text-align: center;
+    font-size: 21.3618px;
+    line-height: 100.4%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "firma";
+    position: relative;
+    top: 1140px;
+    width: 1197px;
+    height: 34.2px;
+  }
+  
+  .firma { 
+      grid-area: firma; 
+  }
+  
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+    
+  /* For presentation only, no need to copy the code below 
+  
+  .container * {
+    border: 1px solid red;
+    position: relative;
+  }
+  
+  .container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }*/
+  

@@ -8,6 +8,7 @@ import {
 import LogIn from "./pages/LogIn/LogIn";
 import SignIn from "./pages/SignIn/SignIn";
 import Home from "./pages/Home/Home";
+import Form from "./pages/form/Form";
 
 function App() {
   /* const [showLogin, setShowLogin] = useState(true);
@@ -27,6 +28,9 @@ function App() {
           <Route path="/SignIn">
             <SignIn />
           </Route>
+          <Route path="/Form">
+            <Form/>
+          </Route>
         </Switch>
       </div>
     </Router>
@@ -34,3 +38,4 @@ function App() {
 }
 
 export default App;
+ 

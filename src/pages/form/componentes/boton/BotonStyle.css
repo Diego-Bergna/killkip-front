@@ -1,0 +1,64 @@
+
+#boton{
+    grid-column: span 1;
+    line-height: 50px;
+    width: 30%;
+    background: white;
+    font-size: 24.0032px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 30px;
+}
+
+#boton:hover{
+    box-shadow:3px 0 30px rgba(163,163,163,1);
+}
+
+.containerButon {
+    display: grid;
+    position: relative;
+    top: 1230px;
+    left: 450px;
+    bottom: 50px;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "area-boton";
+    width: 500px;
+    height: 88px;
+    padding-bottom: 30px;
+  }
+  
+  .area-boton { grid-area: area-boton; }
+  
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+    
+  /* For presentation only, no need to copy the code below 
+  
+  .container * {
+    border: 1px solid red;
+    position: relative;
+  }
+  
+  .container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }*/

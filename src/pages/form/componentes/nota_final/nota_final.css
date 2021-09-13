@@ -1,0 +1,87 @@
+.container7 {
+    display: grid;
+    position: relative;
+    top: 1000px;
+    
+    right: 10px;
+    grid-template-columns: 35.9% 2% 62.1%;
+    grid-template-rows: 42.9% 14.16% 42.9fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . Calificacion-final-titulo"
+      ". . ."
+      "promedio-general-titulo . valor";
+    width: 1017px;
+    height: 240px;
+  }
+  
+  .Calificacion-final-titulo { 
+    grid-area: Calificacion-final-titulo; 
+    background: white;
+    border-radius: 10.7px;
+  }
+
+  .Calificacion-final-titulo p{
+    padding: 19px 10px 17px 0px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23.1276px;
+    line-height: 24px;
+    text-align: center;
+    color: #454545;
+  }
+  
+  .promedio-general-titulo { 
+    grid-area: promedio-general-titulo; 
+    background: white;
+    border-radius: 10.7px 0 0 10.7px;
+  }
+
+  .promedio-general-titulo p{
+    padding: 19px 10px 5px 0px;
+    font-family: Arial;
+    font-style: normal;
+    /*font-weight: bold;*/
+    font-size: 23.1276px;
+    line-height: 24px;
+    text-align: center;
+    color: #454545;
+  }
+  
+  .valor { 
+    grid-area: valor; 
+    background: white; 
+    border-radius: 0 10.7px 10.7px 0;
+  }
+
+  .valor p{
+      padding-top: 26px;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+    
+  /* For presentation only, no need to copy the code below */
+/*   
+  .container * {
+    border: 1px solid red;
+    position: relative;
+  }
+  
+  .container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+   */
+  

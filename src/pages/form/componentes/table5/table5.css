@@ -1,0 +1,272 @@
+#input5 {
+    padding: 0 20px 0 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    z-index: 3;
+    background: #C4C4C44D;
+}
+
+.container4 {
+    position: relative;
+    top: 800px;
+    right: 100px;
+    border-radius: 10px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-auto-columns: 1fr;
+    gap: 15px 1px;
+    grid-auto-flow: row;
+    width: 1250px;
+    height: 1000px;
+}
+
+.titulo4 {
+    display: grid;
+    grid-template-columns: 32.5% 35% 32.5%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". titulo-texto4 .";
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.titulo-texto4 {
+    grid-area: titulo-texto4;
+    background-color: #FFD200;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.cuerpo4 {
+    display: grid;
+    grid-template-columns: 6% 38% 15% 15% 15% 6%;
+    grid-template-rows: 4% 11% 15% 15% 15% 14.5% 14.5% 4%;
+    gap: 1% 1%;
+    grid-auto-flow: row;
+    grid-template-areas: ". . . . . ." ". . colaborador4 encargado4 director4 ." ". act-org4 p14 p24 p34 ." ". act-equip4 p44 p54 p64 ." ". act-colab4 p74 p84 p94 ." ". predis4 p104 p114 p124 ." ". punt4 p134 p144 p154 ." ". . . . . .";
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.colaborador4 {
+    grid-area: colaborador4;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+.colaborador4 p{
+    width: 219.38px;
+    height: 48.2px;
+    padding: 7px 29px 5px 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.1018px;
+    line-height: 24px;
+    text-align: center;
+    color: #454545;
+}
+
+.encargado4 {
+    grid-area: encargado4;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.encargado4 p{
+    width: 219.38px;
+    height: 48.2px;
+    padding: 7px 29px 5px 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.1018px;
+    line-height: 24px;
+    text-align: center;
+    color: #454545;
+}
+
+.director4 {
+    grid-area: director4;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.director4 p{
+    width: 219.38px;
+    height: 48.2px;
+    padding: 16px 29px 5px 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.1018px;
+    line-height: 24px;
+    text-align: center;
+    color: #454545;
+}
+
+.p14 {
+    grid-area: p14;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p24 {
+    grid-area: p24;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p34 {
+    grid-area: p34;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p44 {
+    grid-area: p44;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p54 {
+    grid-area: p54;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p64 {
+    grid-area: p64;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p74 {
+    grid-area: p74;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p84 {
+    grid-area: p84;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p94 {
+    grid-area: p94;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p104 {
+    grid-area: p104;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p114 {
+    grid-area: p114;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p124 {
+    grid-area: p124;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p134 {
+    grid-area: p134;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p144 {
+    grid-area: p144;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.p154 {
+    grid-area: p154;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.act-org4 {
+    grid-area: act-org4;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.act-org4 p{
+    padding-top: 10px;
+}
+
+.act-equip4 {
+    grid-area: act-equip4;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.act-equip4 p{
+    padding-top: 11px;
+}
+
+.act-colab4 {
+    grid-area: act-colab4;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.act-colab4 p{
+    padding-top: 10px;
+}
+
+.predis4 {
+    grid-area: predis4;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.predis4 p{
+    padding-top: 9px;
+}
+
+.punt4 {
+    grid-area: punt4;
+    background: #C4C4C44D;
+    border-radius: 30px;
+}
+
+.punt4 p{
+padding-top: 7px; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* For presentation only, no need to copy the code below */
+
+/*   
+  .container * {
+    border: 1px solid red;
+    position: relative;
+  }
+  
+  .container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  } */
