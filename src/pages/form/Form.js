@@ -15,7 +15,6 @@ import DniId from './componentes/dni_id/dni_id';
 import Firma from './componentes/firma/firma';
 import './Form.css'
 
-import ExportPdfComponent from './export-pdf';
 
 
 import Swal from 'sweetalert2';
@@ -394,9 +393,6 @@ export default function Form() {
       <div class="containerButon">
         <button type="submit" onClick={enviar} id="boton">Enviar</button>
    
-      </div>
-      <div className="App container">
-        <ExportPdfComponent/>
       </div>
 
     {/* </main1> */}
