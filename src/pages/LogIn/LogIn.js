@@ -73,7 +73,7 @@ export default function LogIn(props) {
       });
   };
   return (
-    <div className="container">
+    <div className="loginContainer">
       <h1>Login</h1>
       <div className="loginform">
         <Input
@@ -83,13 +83,13 @@ export default function LogIn(props) {
           onChange={setInput}
         />
         <div className="inputPasswordContainer">
-          <InputPassword 
+          <InputPassword
             type={passwordShown ? "text" : "password"}
             placeholder="Contraseña"
             name="password"
             onChange={setInput}
           />
-          <img className="eyeIcon"  src={eyeIcon} alt ="eyeIcon" onClick={togglePassword}/>
+          <img className="eyeIcon" src={eyeIcon} alt="eyeIcon" onClick={togglePassword} />
         </div>
 
         <button onClick={sendData} className="buttonForm">
