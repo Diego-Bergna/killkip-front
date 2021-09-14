@@ -3,7 +3,7 @@
   text-align: center;
   width: auto;
   height: auto;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   background-color: #21191a;
   display: flex;
   justify-content: center;
