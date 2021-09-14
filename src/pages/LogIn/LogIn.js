@@ -24,7 +24,8 @@ export default function LogIn(props) {
   const [Redirect, SetRedirect] = useState(false);
   useEffect(() => {
     if (Redirect) {
-      window.location.href = "https://form.7170s.com/index.html";
+      // window.location.href = "https://form.7170s.com/lobby";
+      history.push("/lobby");
     }
   }, [Redirect]);
 

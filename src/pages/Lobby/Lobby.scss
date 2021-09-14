@@ -1,0 +1,35 @@
+.lobbyContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 30rem;
+    h1 {
+      margin: 2rem 0;
+      font-family: "Montserrat";
+      font-size: 3rem;
+      color: white;
+    }
+    .lobbyform {
+      background: #ffffff;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+      border-radius: 29px;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      font-family: "Montserrat";
+      grid-gap: 1.5rem;
+
+    }
+    .form {
+      border: none;
+      border-bottom: 1px solid #ffd200 !important;
+      background: none;
+      font-weight: 400 !important;
+      font-size: 1rem;
+      color: #ffd200;
+      cursor: pointer;
+    }
+
+
+  }
+  
