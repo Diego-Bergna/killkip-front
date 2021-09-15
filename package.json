@@ -22,7 +22,7 @@
     "sweetalert2": "^11.1.5",
     "web-vitals": "^1.0.1"
   },
-  "homepage": "https://www.login.7170s.com/",
+  "homepage": "https://7170s.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

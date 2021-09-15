@@ -108,7 +108,9 @@ export default function LogIn(props) {
           Regístrate
         </button>
       </div>
-      <img className="logo" src={logo} alt="logo" />
+      <img className="logo" onClick={()=>{
+        history.push("/");
+      }} src={logo} alt="logo" />
     </div>
   );
 }
